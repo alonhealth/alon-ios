@@ -55,7 +55,7 @@ public class AlonIOS {
         healthStore.execute(query)
     }
 
-    private func fetchSleepScore(completion: @escaping @Sendable (Double?) -> Void) {
+    public func fetchSleepScore(completion: @escaping @Sendable (Double?) -> Void) {
         let sleepType = HKCategoryType.categoryType(forIdentifier: .sleepAnalysis)!
         let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())!
         let predicate = HKQuery.predicateForSamples(withStart: startDate, end: Date(), options: .strictStartDate)
