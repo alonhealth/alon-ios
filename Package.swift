@@ -8,7 +8,7 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "AlonIOS",
+            name: "alon-ios",
             targets: ["alon-ios"]),
     ],
     targets: [
